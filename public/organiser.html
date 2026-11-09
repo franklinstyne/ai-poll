@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Poll Link Maker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap" id="app">
+    <h1>Poll link maker</h1>
+    <p class="sub">Type a client code and a session title. Copy the two links. Each client code keeps its own separate votes.</p>
+
+    <div class="card">
+      <label class="field">
+        <span>Client code</span>
+        <input id="code" type="text" placeholder="for example: maybank-nov" autocomplete="off">
+        <small>Letters, numbers and hyphens only. A new code always starts with a clean slate.</small>
+      </label>
+      <label class="field">
+        <span>Session title shown to participants</span>
+        <input id="title" type="text" maxlength="80" placeholder="for example: AI at Work, Maybank Training" autocomplete="off">
+      </label>
+
+      <div class="linkbox">
+        <h3>Participant link (send this to the class)</h3>
+        <div class="linkrow"><input id="plink" readonly><button type="button" id="pcopy">Copy</button></div>
+      </div>
+      <div class="linkbox">
+        <h3>Results link (open this on your screen)</h3>
+        <div class="linkrow"><input id="rlink" readonly><button type="button" id="rcopy">Copy</button></div>
+      </div>
+      <p class="status" id="msg"></p>
+    </div>
+  </div>
+  <script src="common.js"></script>
+  <script src="organiser.js"></script>
+</body>
+</html>

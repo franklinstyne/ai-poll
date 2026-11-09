@@ -1,0 +1,11 @@
+{
+  "name": "ai-pulse-poll",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Reusable live pulse poll for training sessions",
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0",
+    "@netlify/functions": "^3.0.0"
+  }
+}
