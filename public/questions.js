@@ -31,6 +31,21 @@ window.POLL_QUESTIONS = [
     options: ["ChatGPT", "Claude", "Gemini", "Microsoft Copilot", "Perplexity", "Canva AI", "None yet"]
   },
   {
+    id: "platform",
+    short: "Company platform",
+    type: "multi",
+    text: "Which AI platform does your company provide?",
+    hint: "Tick all that apply.",
+    options: [
+      "Microsoft 365 with Copilot",
+      "Google Workspace with Gemini",
+      "ChatGPT Enterprise",
+      "Claude Enterprise",
+      "No company AI system",
+      "Others"
+    ]
+  },
+  {
     id: "frequency",
     short: "How often",
     type: "single",
