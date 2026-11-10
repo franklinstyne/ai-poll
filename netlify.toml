@@ -3,3 +3,8 @@
 
 [functions]
   directory = "netlify/functions"
+
+[build.environment]
+  # RESET_PIN is read by the function at runtime. Skip Netlify's secret scan for it,
+  # otherwise a short PIN can match text in the public files and fail the build.
+  SECRETS_SCAN_OMIT_KEYS = "RESET_PIN"
