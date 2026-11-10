@@ -10,7 +10,7 @@
 <body>
   <div class="wrap" id="app">
     <h1>Poll link maker</h1>
-    <p class="sub">Type a client code and a session title. Copy the two links. Each client code keeps its own separate votes.</p>
+    <p class="sub">Type a client code and a session title. Copy the links or download the QR code. Each client code keeps its own separate votes.</p>
 
     <div class="card">
       <label class="field">
@@ -27,13 +27,24 @@
         <h3>Participant link (send this to the class)</h3>
         <div class="linkrow"><input id="plink" readonly><button type="button" id="pcopy">Copy</button></div>
       </div>
+
+      <div class="qrbox" id="qrbox" hidden>
+        <div class="qr-frame" id="qr"></div>
+        <div class="qr-side">
+          <h3>QR code for participants</h3>
+          <p class="small">Participants scan this with their phone camera to open the poll. The results screen also shows it.</p>
+          <button type="button" id="qrdl">Download QR as PNG</button>
+        </div>
+      </div>
+
       <div class="linkbox">
         <h3>Results link (open this on your screen)</h3>
-        <div class="linkrow"><input id="rlink" readonly><button type="button" id="rcopy">Copy</button></div>
+        <div class="linkrow"><input id="rlink" readonly><button type="button" id="rcopy">Copy</button><a class="btn-link" id="ropen" href="#" target="_blank" rel="noopener">Open</a></div>
       </div>
       <p class="status" id="msg"></p>
     </div>
   </div>
+  <script src="qrcode.js"></script>
   <script src="common.js"></script>
   <script src="organiser.js"></script>
 </body>
