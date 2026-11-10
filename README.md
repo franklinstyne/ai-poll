@@ -23,7 +23,7 @@ Edit `public/questions.js` only. Then upload it to GitHub again.
 
 ## Optional: reset button
 
-The Reset votes button needs a PIN. In Netlify go to Site configuration, Environment variables, add `RESET_PIN` with any value you like, then deploy again. If you skip this, just use a new client code for a clean start.
+The Reset votes button needs a PIN. In Netlify go to Site configuration, Environment variables, add `RESET_PIN` with any value you like, then deploy again (Deploys, Trigger deploy, Clear cache and deploy site). If you skip this, just use a new client code for a clean start.
 
 ## Notes
 
